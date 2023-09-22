@@ -2,7 +2,7 @@
 #define LISTS_H
 
 /**
- * struct list_t- singly linked list
+ * struct list_count- singly linked list
  * @str: string
  * @len: length of the string
  * @next: points to the next node
