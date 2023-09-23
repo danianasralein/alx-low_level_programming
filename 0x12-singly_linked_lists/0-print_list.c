@@ -13,11 +13,13 @@ size_t print_list(const list_t *h)
 	while (ponit != NULL)
 	{
 		if (ponit->str != NULL)
-			printf("[%d] %s\n", point->len, point->str);
-		else
 			printf("[0] (nil)\n");
-		j += 1;
+			
+		else
+			printf("[%d] %s\n", point->len, point->str);
 		point = ponit->next;
+		j += 1;
+	
 	}
 
 	return (j);
