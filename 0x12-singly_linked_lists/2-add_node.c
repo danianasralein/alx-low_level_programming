@@ -6,8 +6,8 @@
  *@str: string to be added
  *
  * Return: the address of the new element, or NULL if it fails
- *	
-*/
+ *
+ */
 
 list_t *add_node(list_t **head, const char *str)
 {
