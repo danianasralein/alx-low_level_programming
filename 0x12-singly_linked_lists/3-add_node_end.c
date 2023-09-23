@@ -1,15 +1,15 @@
 #include "lists.h"
 /**
-  * add_nodeint_end - add new nodes to the end of the list
+  * add_node_end - add new nodes to the end of the list
   * @head: current place in the list
   * @n: int to add to the list
   * Return: pointer to current position in list
   */
-listint_t *add_nodeint_end(listint_t **head, const int n)
+list_t *add_node_end(list_t **head, const int n)
 {
-	listint_t *new, *current;
+	list_t *new, *curr;
 
-	new = malloc(sizeof(listint_t));
+	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
 	new->n = n;
@@ -20,9 +20,9 @@ listint_t *add_nodeint_end(listint_t **head, const int n)
 		*head = new;
 		return (*head);
 	}
-	current = *head;
-	while (current->next != NULL)
-		current = current->next;
-	current->next = new;
+	curr = *head;
+	while (curr->next != NULL)
+		curr = curr->next;
+	curr->next = new;
 	return (*head);
 }
