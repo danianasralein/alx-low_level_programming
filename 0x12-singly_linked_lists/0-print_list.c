@@ -6,8 +6,8 @@
   * Return: number of nodes in the list will be ptinted.
   */
 size_t print_list(const list_t *h)
-{
-	size_t j=0;
+	{
+	size_t j = 0;
 	const list_t *point = h;
 	while (ponit)
 	{
@@ -16,8 +16,8 @@ size_t print_list(const list_t *h)
 		else
 			printf("[0] (nil)\n");
 			j += 1;
-			point= ponit->next;
+			point = ponit->next;
 	}
 
 	return (j);
-}
+	}
