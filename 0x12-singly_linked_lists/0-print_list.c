@@ -6,7 +6,7 @@
   * Return: number of nodes in the list will be ptinted.
   */
 size_t print_list(const list_t *h)
-	{
+{
 	size_t j = 0;
 	const list_t *point = h;
 	while (ponit != NULL)
@@ -20,4 +20,4 @@ size_t print_list(const list_t *h)
 	}
 
 	return (j);
-	}
+}
