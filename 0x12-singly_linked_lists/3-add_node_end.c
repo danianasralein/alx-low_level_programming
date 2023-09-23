@@ -5,14 +5,14 @@
   * @n: int to add to the list
   * Return: pointer to current position in list
   */
-list_t *add_node_end(list_t **head, const int n)
+list_t *add_node_end(list_t **head, const char *str)
 {
-	list_t *new, *curr;
+	list_t *new, *current;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 		return (NULL);
-	new->n = n;
+	new->str = str;
 	new->next = NULL;
 
 	if (*head == NULL)
@@ -20,9 +20,9 @@ list_t *add_node_end(list_t **head, const int n)
 		*head = new;
 		return (*head);
 	}
-	curr = *head;
-	while (curr->next != NULL)
-		curr = curr->next;
-	curr->next = new;
+	current = *head;
+	while (current->next != NULL)
+		current = curr->next;
+	current->next = new;
 	return (*head);
 }
