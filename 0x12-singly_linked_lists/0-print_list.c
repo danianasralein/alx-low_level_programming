@@ -8,14 +8,15 @@
 size_t print_list(const list_t *h)
 {
 	size_t j=0;
-	while (h != NULL)
+	const list_t *point = h;
+	while (ponit)
 	{
-		if (h->str != NULL)
-			printf("[%d] %s\n", h->len, h->str);
+		if (!h->str)
+			printf("[%d] %s\n", point->len, point->str);
 		else
 			printf("[0] (nil)\n");
 			j += 1;
-			h= h->next;
+			point= ponit->next;
 	}
 
 	return (j);
