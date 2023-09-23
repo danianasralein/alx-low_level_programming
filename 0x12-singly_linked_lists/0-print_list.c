@@ -8,13 +8,16 @@
 size_t print_list(const list_t *h)
 {
 	size_t j;
-	if (!h->str)
+	while (h)
+	{	
+		if (!h->str)
 			printf("[0] (nil)\n");
-	else
-	for (j = 0; h; j++)
-	{
-		printf("%d\n", h->len);
-		h = h->next;
+		else
+		for (j = 0; h; j++)
+		{
+			printf("%d\n", h->len);
+			h = h->next;
+		}
 	}
 	return (j);
 }
