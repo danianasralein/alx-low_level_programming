@@ -16,7 +16,7 @@ size_t print_list(const list_t *h)
 			printf("[0] (nil)\n");
 			
 		else
-			printf("[%d] %s\n", point->len, point->str);
+			printf("[%u] %s\n", point->len, point->str);
 		point = ponit->next;
 		j += 1;
 	
