@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 	const list_t *point = h;
 	while (ponit)
 	{
-		if (!h->str)
+		if (!ponit->str)
 			printf("[%d] %s\n", point->len, point->str);
 		else
 			printf("[0] (nil)\n");
