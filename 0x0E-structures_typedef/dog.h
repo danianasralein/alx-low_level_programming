@@ -3,9 +3,9 @@
 
 /**
  *struct dog - define the dog
- *@name: the name of the dog
- *@age: the age of the dog
- *@owner: the owner of the dog
+ *@name:Fisrt element
+ *@age: Second element 
+ *@owner: Third element
  */
 struct dog
 {
@@ -13,3 +13,5 @@ struct dog
 	float age;
 	char *owner;
 };
+
+#endif
