@@ -4,7 +4,7 @@
 /**
  *struct dog - define the dog
  *@name:Fisrt element
- *@age: Second element 
+ *@age: Second element
  *@owner: Third element
  */
 struct dog
