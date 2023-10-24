@@ -5,7 +5,7 @@
  *
  * @head: Parameter double pointer that point to the head of
  * the linked list
- * @n: int to add to the list 
+ * @n: int to add to the list
  *
  * Return: pointer to the new node ,or NULL if it fails
  */
