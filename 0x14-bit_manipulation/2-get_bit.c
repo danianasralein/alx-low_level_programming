@@ -8,7 +8,7 @@
  */
 int get_bit(unsigned long int n, unsigned int index)
 {
-unsigned long int t_binary;
+unsigned long int t_binary_number;
 
 t_binary_number = (sizeof(n) * 8);
 if (index < t_binary_number)
