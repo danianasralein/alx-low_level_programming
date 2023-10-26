@@ -5,7 +5,7 @@
  */
 void print_binary(unsigned long int n)
 {
-int binary_number ;
+int binary_number;
 
 if (n >> 1)
 print_binary(n >> 1);
